@@ -42,6 +42,7 @@ const centerBtn = () => {
 }
 
 getQuote();
+setBackground();
 
 newQuoteBtn.addEventListener('click', getQuote);
 // calculate half of the container, and place the button there
