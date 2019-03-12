@@ -7,4 +7,5 @@ After starting this project several other times, I've finally seen it through to
 In the end, this project was simple and easy to implement thanks to the free Quotes on Design API. I had a lot of fun, and although it was simple - I learned a lot about when NOT to use a framework.
 
 Thanks to [Quotes on Design](https://quotesondesign.com/) for the awesome and free API.
+
 blah blah blah, I don't own the [Twitter](https://twitter.com) logo.
