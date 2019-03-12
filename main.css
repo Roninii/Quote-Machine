@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: background 1s;
+}
+
+button {
+    width: 100px;
+    height: 25px;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 2px 2px 5px 2px #09090920, -2px 2px 5px 2px #09090920;
+    color: #fafafa;
+
+    position: absolute;
+    bottom: 10px;
+
+
+    transition: background 3s;
+    transition: box-shadow .2s;
+}
+
+button:hover {
+    box-shadow: 2px 2px 5px 2px #0a0a0a50, -2px 2px 5px 2px #0a0a0a50;
+}
+
+button:active {
+    box-shadow: none;
+}
+
+img {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    border-radius: 5px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #03030320;
+    color: #030303;
+    font-family: 'Lora', serif;
+    /* text-align: center; */
+}
+
+.quote-box {
+    min-width: 200px;
+    max-width: 600px;
+    min-height: 300px;
+    margin: 10px;
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 2px #03030320, -5px 0px 5px 2px #03030320;
+    text-align: center;
+    color: #fafafa;
+    position: relative;
+
+    font-family: 'Lora', serif;
+    font-weight: 300;
+}
+
+.quote-author {
+    font-style: italic;
+}
+
+@media (min-width: 400px) {
+    .quote {
+        font-size: 1.2rem;
+    }
+}
+@media (min-width: 750px) {
+    .quote {
+        font-size: 1.4rem;
+    }
+}
+
+.heart {
+    color: red;
+    font-size: 1.5rem;
+}
+
+.links {
+    position: fixed;
+    bottom: 2px;
+    right: 2px;
+}
+.links > a {
+    text-decoration: none;
+    color: #030303;
+}
