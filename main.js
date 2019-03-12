@@ -30,7 +30,7 @@ const getQuote = () => {
 };
 
 const setBackground = () => {
-    const randColor = palette[Math.floor(Math.random() * 18)];
+    const randColor = palette[Math.floor(Math.random() * 15)];
     quoteBoxEl.style.background = randColor;
     newQuoteBtn.style.background = randColor;
     htmlBody.style.background = `${randColor}80`;
@@ -42,7 +42,6 @@ const centerBtn = () => {
 }
 
 getQuote();
-setBackground();
 
 newQuoteBtn.addEventListener('click', getQuote);
 // calculate half of the container, and place the button there
