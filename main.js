@@ -3,6 +3,7 @@ const quoteBoxEl = document.querySelector('.quote-box');
 const quoteEl = document.getElementById('text');
 const authorEl = document.getElementById('author');
 const newQuoteBtn = document.getElementById('new-quote');
+const tweetLinkEl = document.getElementById('tweet-quote');
 
 const palette = ['#f44336', '#e91e63', '#9c27b0', '#673ab7', '#3f51b5',
     '#2196f3', '#03a9f4', '#00bcd4', '#009688', '#009688',
@@ -25,6 +26,7 @@ const getQuote = () => {
 
             quoteEl.innerHTML = quote;
             authorEl.innerHTML = `- ${author}`;
+            setTweetUrl(quote, author);
             centerBtn();
         });
 };
@@ -39,6 +41,17 @@ const setBackground = () => {
 const centerBtn = () => {
     const computedBoxWidth = getComputedStyle(quoteBoxEl).width;
     newQuoteBtn.style.left = `${parseInt(computedBoxWidth) / 2}px`;
+}
+
+const setTweetUrl = (quote, author) => {
+    let baseUrl = 'https://twitter.com/intent/tweet';
+    quote = sanitizeQuote(quote);
+    tweetLinkEl.setAttribute('href', `${baseUrl}?text=${quote} -${author}`);
+}
+
+const sanitizeQuote = (quote) => {
+    let regEx = /<\/*\w+>/gi
+    return quote.replace(regEx, '');
 }
 
 getQuote();
