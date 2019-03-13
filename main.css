@@ -52,7 +52,7 @@ footer {
     background: #03030320;
     color: #030303;
     font-family: 'Lora', serif;
-    /* text-align: center; */
+    text-align: center;
 }
 
 .quote-box {
@@ -84,18 +84,22 @@ footer {
     .quote {
         font-size: 1.4rem;
     }
+    
+    .links {
+        position: fixed;
+        bottom: 2px;
+        right: 2px;
+    }
+    
+    footer {
+        text-align: initial;
+    }
 }
-
 .heart {
     color: red;
     font-size: 1.5rem;
 }
 
-.links {
-    position: fixed;
-    bottom: 2px;
-    right: 2px;
-}
 .links > a {
     text-decoration: none;
     color: #030303;
