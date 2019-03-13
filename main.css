@@ -19,6 +19,7 @@ button {
     border-radius: 2px;
     box-shadow: 2px 2px 5px 2px #09090920, -2px 2px 5px 2px #09090920;
     color: #fafafa;
+    font-family: sans-serif;
 
     position: absolute;
     bottom: 10px;
@@ -30,10 +31,15 @@ button {
 
 button:hover {
     box-shadow: 2px 2px 5px 2px #0a0a0a50, -2px 2px 5px 2px #0a0a0a50;
+    cursor: pointer;
 }
 
 button:active {
     box-shadow: none;
+}
+
+button:focus {
+    outline: 0;
 }
 
 img {
@@ -51,7 +57,7 @@ footer {
     width: 100%;
     background: #03030320;
     color: #030303;
-    font-family: 'Lora', serif;
+    font-family: sans-serif;
     text-align: center;
 }
 
@@ -66,22 +72,25 @@ footer {
     text-align: center;
     color: #fafafa;
     position: relative;
+}
 
+.quote {
     font-family: 'Lora', serif;
     font-weight: 300;
 }
 
 .quote-author {
     font-style: italic;
+    font-family: sans-serif;
 }
 
 @media (min-width: 400px) {
-    .quote {
+    .quote, .quote-author {
         font-size: 1.2rem;
     }
 }
 @media (min-width: 750px) {
-    .quote {
+    .quote, .quote-author {
         font-size: 1.4rem;
     }
     
